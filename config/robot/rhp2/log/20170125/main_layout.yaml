@@ -3,11 +3,11 @@ extend:
 
 main:
   joint torque of right arm:
-    yRange: [-3, 3]
+    yRange: {min: -3, max: 3}
 
   joint torque of left arm:
-    yRange: [-3, 3]
+    yRange: {min: -3, max: 3}
 
   imu_gsensor:
-    yRange: [-65, 50]
+    yRange: {min: -65, max: 50}
 

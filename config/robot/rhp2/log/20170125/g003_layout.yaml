@@ -3,4 +3,4 @@ extend:
 
 main:
   joint angle of right arm:
-    xRange: [10, 11]
+    xRange: {min: 10, max: 11}
