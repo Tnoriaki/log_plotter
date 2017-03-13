@@ -1,0 +1,67 @@
+main:
+  joint angle of right arm:
+    left_label: joint angle [degree]
+    legends:
+      - { key: q, id: [18], label: R_COLLAR_Y }
+      - { key: q, id: [19], label: R_SHOULDER_P }
+      - { key: q, id: [20], label: R_SHOULDER_R }
+      - { key: q, id: [21], label: R_SHOULDER__Y }
+      - { key: q, id: [22], label: R_ELBOW_P }
+#      - { key: q, id: [23], label: R_WRIST_R }
+#      - { key: q, id: [24], label: R_WRIST_P }
+#      - { key: q, id: [25], label: R_WRIST_Y }
+    # newline: False
+
+  joint angle of left arm:
+    left_label: joint angle [degree]
+    legends:
+      - { key: q, id: [26], label: L_COLLAR_Y }
+      - { key: q, id: [27], label: L_SHOULDER_P }
+      - { key: q, id: [28], label: L_SHOULDER_R }
+      - { key: q, id: [29], label: L_SHOULDER_Y }
+      - { key: q, id: [30], label: L_ELBOW_P }
+#      - { key: q, id: [31], label: L_WRIST_R }
+#      - { key: q, id: [32], label: L_WRIST_P }
+#      - { key: q, id: [33], label: L_WRIST_Y }
+
+  #   # newline: False
+
+  joint torque of right arm:
+    left_label: joint torque [Nm]
+    legends:
+      - { key: tau, id: [18], label: R_COLLAR_Y }
+      - { key: tau, id: [19], label: R_SHOULDER_P }
+      - { key: tau, id: [20], label: R_SHOULDER_R }
+      - { key: tau, id: [21], label: R_SHOULDER__Y }
+      - { key: tau, id: [22], label: R_ELBOW_P }
+#      - { key: tau, id: [23], label: R_WRIST_R }
+#      - { key: tau, id: [24], label: R_WRIST_P }
+#      - { key: tau, id: [25], label: R_WRIST_Y }
+    # newline: False
+
+  joint torque of left arm:
+    left_label: joint torque [Nm]
+    legends:
+      - { key: tau, id: [26], label: L_COLLAR_Y }
+      - { key: tau, id: [27], label: L_SHOULDER_P }
+      - { key: tau, id: [28], label: L_SHOULDER_R }
+      - { key: tau, id: [29], label: L_SHOULDER_Y }
+      - { key: tau, id: [30], label: L_ELBOW_P }
+#      - { key: tau, id: [31], label: L_WRIST_R }
+#      - { key: tau, id: [32], label: L_WRIST_P }
+#      - { key: tau, id: [33], label: L_WRIST_Y }
+
+  imu_gsensor:
+    left_label: acceleration [m/s^2]
+    legends:
+      - { key: imu_gsensor, id: [0], label: x }
+      - { key: imu_gsensor, id: [1], label: y }
+      - { key: imu_gsensor, id: [2], label: z }
+
+  kf_rpy:
+    left_label: angle [degree]
+    legends:
+      - { key: kf_rpy, id: [0], label: roll }
+      - { key: kf_rpy, id: [1], label: pitch }
+      - { key: kf_rpy, id: [2], label: yaw }
+

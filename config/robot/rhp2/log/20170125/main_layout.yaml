@@ -1,0 +1,13 @@
+extend:
+  - ../../rhp2_layout.yaml
+
+main:
+  joint torque of right arm:
+    yRange: {min: -3, max: 3}
+
+  joint torque of left arm:
+    yRange: {min: -3, max: 3}
+
+  imu_gsensor:
+    yRange: {min: -65, max: 50}
+

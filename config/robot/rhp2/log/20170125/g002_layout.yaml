@@ -1,0 +1,6 @@
+extend:
+  - main_layout.yaml
+
+main:
+  joint angle of right arm:
+    xRange: {min: 13.5, max: 14.5}
