@@ -35,3 +35,8 @@ main:
   #   legends:
   #     - { key: abc_contactStates, id: [0-3] }
   #     - { key: abc_controlSwingSupportTime, id: [0-3] }
+
+  referece / actual zmp:
+    legends:
+      - { key: reference zmp, id: [0-2] }
+      - { key: actual zmp, id: [0-2] }

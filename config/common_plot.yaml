@@ -31,6 +31,18 @@ st_originRefZmp:
 st_originNewZmp:
   data:
     - { log: st_originNewZmp, column: [0-2] }
+## world zmp
+reference zmp:
+  func: plot_add
+  data:
+    - { log: abc_zmpOut, column: [0-2] }
+    - { log: abc_baseTformOut, column: [0-2] }
+
+actual zmp:
+  func: plot_add
+  data:
+    - { log: st_zmp, column: [0-2] }
+    - { log: st_currentBasePos, column: [0-2] }
 # root-link relative zmp
 st_zmp:
   data:
