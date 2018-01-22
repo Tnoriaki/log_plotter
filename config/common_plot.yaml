@@ -8,6 +8,21 @@ st_originActCog:
 st_originRefCog:
   data:
     - { log: st_originRefCog, column: [0-2] }
+## world cog
+reference cog:
+  func: plot_add2minus1
+  data:
+    - { log: abc_zmpOut, column: [0-2] }
+    - { log: abc_baseTformOut, column: [0-2] }
+    - { log: st_originRefCog, column: [0-2] }
+    - { log: st_originRefZmp, column: [0-2] }
+actual cog:
+  func: plot_add2minus1
+  data:
+    - { log: st_zmp, column: [0-2] }
+    - { log: st_currentBasePos, column: [0-2] }
+    - { log: st_originActCog, column: [0-2] }
+    - { log: st_originActZmp, column: [0-2] }
 ## cog velocity
 st_originActCogVel:
   data:
@@ -37,7 +52,13 @@ reference zmp:
   data:
     - { log: abc_zmpOut, column: [0-2] }
     - { log: abc_baseTformOut, column: [0-2] }
-
+modified reference zmp:
+  func: plot_add2minus1
+  data:
+    - { log: st_zmp, column: [0-2] }
+    - { log: st_currentBasePos, column: [0-2] }
+    - { log: st_originNewZmp, column: [0-2] }
+    - { log: st_originActZmp, column: [0-2] }
 actual zmp:
   func: plot_add
   data:
@@ -73,9 +94,11 @@ RobotHardware0_lhsensor:
   data:
     - { log: RobotHardware0_lhsensor, column: [0-5] }
 rmfo_off_rfsensor:
+  func: plot_inverse
   data:
     - { log: rmfo_off_rfsensor, column: [0-5] }
 rmfo_off_lfsensor:
+  func: plot_inverse
   data:
     - { log: rmfo_off_lfsensor, column: [0-5] }
 rmfo_off_rhsensor:

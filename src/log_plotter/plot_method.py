@@ -110,6 +110,15 @@ class PlotMethod(object):
         plot_item.plot(times, data, pen=pyqtgraph.mkPen(PlotMethod.linetypes["color"][i], width=2, style=PlotMethod.linetypes["style"][i]), name=key)
 
     @staticmethod
+    def plot_add2minus1(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
+        data0 = data_dict[logs[0]][:, log_cols[0]]
+        data1 = data_dict[logs[1]][:, log_cols[1]]
+        data2 = data_dict[logs[2]][:, log_cols[2]]
+        data3 = data_dict[logs[3]][:, log_cols[3]]
+        data = data0 + data1 + data2 - data3
+        plot_item.plot(times, data, pen=pyqtgraph.mkPen(PlotMethod.linetypes["color"][i], width=2, style=PlotMethod.linetypes["style"][i]), name=key)
+
+    @staticmethod
     def plot_rad2deg_diff(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
         plot_item.plot(times, [math.degrees(x) for x in (data_dict[logs[1]][:, log_cols[1]] - data_dict[logs[0]][:, log_cols[0]])],
                        pen=pyqtgraph.mkPen('r', width=2, style=PlotMethod.linetypes["style"][i]), name=key)
