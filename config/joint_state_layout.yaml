@@ -1,0 +1,82 @@
+main:
+  Rleg joint angle:
+    legends:
+      - { key: abc_q, id: [0],label: ref hip-y  }
+      - { key: abc_q, id: [1],label: ref hip-r  }
+      - { key: abc_q, id: [2],label: ref hip-p  }
+      - { key: abc_q, id: [3],label: ref knee-p }
+      - { key: abc_q, id: [4],label: ref ankle-p}
+      - { key: abc_q, id: [5],label: ref ankle-r}
+      # - { key: el_q, id: [0],label: el_hip-y  }
+      # - { key: el_q, id: [1],label: el_hip-r  }
+      # - { key: el_q, id: [2],label: el_hip-p  }
+      # - { key: el_q, id: [3],label: el_knee-p }
+      # - { key: el_q, id: [4],label: el_ankle-p}
+      # - { key: el_q, id: [5],label: el_ankle-r}
+      - { key: RobotHardware0_q, id: [0],label: act hip-y  }
+      - { key: RobotHardware0_q, id: [1],label: act hip-r  }
+      - { key: RobotHardware0_q, id: [2],label: act hip-p  }
+      - { key: RobotHardware0_q, id: [3],label: act knee-p }
+      - { key: RobotHardware0_q, id: [4],label: act ankle-p}
+      - { key: RobotHardware0_q, id: [5],label: act ankle-r}
+    newline: false
+
+  Lleg joint angle:
+    legends:
+      # - { key: st_q, id: [6],  label: st_hip-y  }
+      # - { key: st_q, id: [7],  label: st_hip-r  }
+      # - { key: st_q, id: [8],  label: st_hip-p  }
+      # - { key: st_q, id: [9],  label: st_knee-p }
+      # - { key: st_q, id: [10], label: st_ankle-p}
+      # - { key: st_q, id: [11], label: st_ankle-r}
+      - { key: abc_q, id: [6],  label: ref hip-y  }
+      - { key: abc_q, id: [7],  label: ref hip-r  }
+      - { key: abc_q, id: [8],  label: ref hip-p  }
+      - { key: abc_q, id: [9],  label: ref knee-p }
+      - { key: abc_q, id: [10], label: ref ankle-p}
+      - { key: abc_q, id: [11], label: ref ankle-r}
+      # - { key: el_q, id: [6],  label: ref hip-y  }
+      # - { key: el_q, id: [7],  label: ref hip-r  }
+      # - { key: el_q, id: [8],  label: ref hip-p  }
+      # - { key: el_q, id: [9],  label: ref knee-p }
+      # - { key: el_q, id: [10], label: ref ankle-p}
+      # - { key: el_q, id: [11], label: ref ankle-r}
+      - { key: RobotHardware0_q, id: [6],label: act hip-y  }
+      - { key: RobotHardware0_q, id: [7],label: act hip-r  }
+      - { key: RobotHardware0_q, id: [8],label: act hip-p  }
+      - { key: RobotHardware0_q, id: [9],label: act knee-p }
+      - { key: RobotHardware0_q, id: [10],label: act ankle-p}
+      - { key: RobotHardware0_q, id: [11],label: act ankle-r}
+
+  Rleg joint velocity:
+    legends:
+      - { key: abc_dq, id: [0], label: ref hip-y}
+      - { key: abc_dq, id: [1], label: ref hip-r}
+      - { key: abc_dq, id: [2], label: ref hip-p}
+      - { key: abc_dq, id: [3], label: ref knee}
+      - { key: abc_dq, id: [4], label: ref ankle-p}
+      - { key: abc_dq, id: [5], label: ref ankle-r}
+      - { key: RobotHardware0_dq, id: [0], label: act hip-y}
+      - { key: RobotHardware0_dq, id: [1], label: act hip-r}
+      - { key: RobotHardware0_dq, id: [2], label: act hip-p}
+      - { key: RobotHardware0_dq, id: [3], label: act knee}
+      - { key: RobotHardware0_dq, id: [4], label: act ankle-p}
+      - { key: RobotHardware0_dq, id: [5], label: act ankle-r}
+    left_label: "joint angle velocity [deg/s]"
+    newline: false
+
+  Lleg joint velocity:
+    legends:
+      - { key: abc_dq, id: [6],  label: ref hip-y}
+      - { key: abc_dq, id: [7],  label: ref hip-r}
+      - { key: abc_dq, id: [8],  label: ref hip-p}
+      - { key: abc_dq, id: [9],  label: ref knee}
+      - { key: abc_dq, id: [10], label: ref ankle-p}
+      - { key: abc_dq, id: [11], label: ref ankle-r}
+      - { key: RobotHardware0_dq, id: [6],  label: act hip-y}
+      - { key: RobotHardware0_dq, id: [7],  label: act hip-r}
+      - { key: RobotHardware0_dq, id: [8],  label: act hip-p}
+      - { key: RobotHardware0_dq, id: [9],  label: act knee}
+      - { key: RobotHardware0_dq, id: [10], label: act ankle-p}
+      - { key: RobotHardware0_dq, id: [11], label: act ankle-r}
+    left_label: "joint angle velocity [deg/s]"

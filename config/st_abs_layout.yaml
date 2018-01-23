@@ -1,16 +1,41 @@
 main:
-  referece / actual zmp:
+  # referece / actual zmp:
+  #   legends:
+  #     - { key: reference cog, id: [0-2], label: ref com }
+  #     - { key: actual cog, id: [0-2], label: act com }
+  #     - { key: reference zmp, id: [0-2], label: ref zmp }
+  #     - { key: modified reference zmp, id: [0-2], label: new zmp }
+  #     - { key: actual zmp, id: [0-2], label: act zmp }
+  Reference / actual COM and ZMP on the X axis:
     legends:
-      - { key: reference cog, id: [0-2] }
-      - { key: actual cog, id: [0-2] }
-      - { key: reference zmp, id: [0-2] }
-      - { key: modified reference zmp, id: [0-2] }
-      - { key: actual zmp, id: [0-2] }
+      - { key: reference cog, id: [0], label: ref com }
+      - { key: actual cog, id: [0], label: act com }
+      - { key: reference zmp, id: [0], label: ref zmp }
+      - { key: modified reference zmp, id: [0], label: new zmp }
+      - { key: actual zmp, id: [0], label: act zmp }
+    left_label: "X [m]"
+    newline: false
 
-  act/ref cog velocity:
+  Reference / actual COM and ZMP on the Y axis:
     legends:
-      - { key: st_originActCogVel, id: [0-2]}
-      - { key: st_originRefCogVel, id: [0-2]}
+      - { key: reference cog, id: [1], label: ref com }
+      - { key: actual cog, id: [1], label: act com }
+      - { key: reference zmp, id: [1], label: ref zmp }
+      - { key: modified reference zmp, id: [1], label: new zmp }
+      - { key: actual zmp, id: [1], label: act zmp }
+    left_label: "Y [m]"
+    newline: false
+
+  Reference / actual COM on the Z axis:
+    legends:
+      - { key: reference cog, id: [2], label: ref com }
+      - { key: actual cog, id: [2], label: act com }
+    left_label: "Z [m]"
+
+  Refernce / actual COM velocity on the X axis:
+    legends:
+      - { key: st_originRefCogVel, id: [0], label: ref com vel}
+      - { key: st_originActCogVel, id: [0], label: act com vel}
 
   act/ref force:
     legends:

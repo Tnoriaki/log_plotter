@@ -71,7 +71,8 @@ def LegendItem_updateSize(self):
 LegendItem_init_orig = pyqtgraph.graphicsItems.LegendItem.LegendItem.__init__
 def LegendItem_init(self, *args, **kwargs):
     LegendItem_init_orig(self, *args, **kwargs)
-    self.layout.setContentsMargins(9.,0.,9.,0.)
+    # self.layout.setContentsMargins(9.,0.,9.,0.)
+    self.layout.setContentsMargins(9.,0.,60.,9.)
     self.layout.setVerticalSpacing(-5.)
     self.layout.setHorizontalSpacing(25)
 

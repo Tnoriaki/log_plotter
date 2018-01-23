@@ -31,6 +31,16 @@ RobotHardware0_dq:
   data:
     - { log: RobotHardware0_dq, column: [0-33] }
 
+sh_dq:
+  func: plot_rad2deg_vel
+  data:
+    - { log: sh_qOut, column: [0-33] }
+
+abc_dq:
+  func: plot_rad2deg_vel
+  data:
+    - { log: abc_q, column: [0-33] }
+
 el_dq:
   func: plot_rad2deg_vel
   data:
