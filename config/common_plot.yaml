@@ -12,10 +12,10 @@ st_originRefCog:
 reference cog:
   func: plot_add2minus1
   data:
-    - { log: abc_zmpOut, column: [0-2] }
-    - { log: abc_baseTformOut, column: [0-2] }
+    - { log: st_zmp, column: [0-2] }
+    - { log: st_currentBasePos, column: [0-2] }
     - { log: st_originRefCog, column: [0-2] }
-    - { log: st_originRefZmp, column: [0-2] }
+    - { log: st_originActZmp, column: [0-2] }
 actual cog:
   func: plot_add2minus1
   data:
