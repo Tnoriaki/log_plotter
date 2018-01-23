@@ -97,7 +97,8 @@ class PlotMethod(object):
 
     @staticmethod
     def plot_rad2deg_vel(plot_item, times, data_dict, logs, log_cols, cur_col, key, i):
-        data = [math.degrees(x) for x in numpy.diff(data_dict[logs[0]][:, log_cols[0]])/numpy.diff(times)]
+        dt = numpy.average(numpy.diff(times))
+        data = [math.degrees(x) for x in numpy.diff(data_dict[logs[0]][:, log_cols[0]])/dt]
         plot_item.plot(times, numpy.append(data,[0]), pen=pyqtgraph.mkPen(PlotMethod.linetypes["color"][i], width=2, style=PlotMethod.linetypes["style"][i]), name=key)
 
     @staticmethod
