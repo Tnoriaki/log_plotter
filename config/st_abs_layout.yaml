@@ -36,6 +36,7 @@ main:
     legends:
       - { key: st_originRefCogVel, id: [0], label: ref com vel}
       - { key: st_originActCogVel, id: [0], label: act com vel}
+    left_label: "X [m/s]"
 
   act/ref force:
     legends:
