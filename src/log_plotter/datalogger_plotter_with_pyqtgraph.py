@@ -279,6 +279,7 @@ class LogPlotter(object):
                 ax = p.getAxis(side)
                 ax.tickFont = font
                 ax.setLabel(**font_style)
+                ax.setStyle(tickTextOffset = 20)
 
     @my_time
     def customMenu(self):
